@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Viyaas K G E - Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Include custom timeline CSS -->
+  <link rel="stylesheet" href="custom-timeline.css">
+
+  <!-- Include Wow.js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+
+<body>
+  <script src="custom-timeline.js"></script>
+  <script>
+    // Function to animate progress bars on wow.js trigger
+    function animateProgressBars() {
+      const progressBars = document.querySelectorAll('.progress-bar');
+      progressBars.forEach(bar => {
+        const value = bar.getAttribute('data-progress');
+        bar.style.width = value + '%';
+        bar.setAttribute('aria-valuenow', value);
+      });
+    }
+
+    // Initialize WOW.js
+    new WOW({
+      boxClass: 'wow',      // default
+      animateClass: 'animate__animated', // default
+      offset: 0,          // distance to the element when triggering the animation (default is 0)
+      mobile: true,       // trigger animations on mobile devices (default is true)
+      live: true,         // act on asynchronously loaded content (default is true)
+      callback: function (box) {
+        // Trigger progress bar animation when it becomes visible
+        if (box.classList.contains('progress-bar')) {
+          animateProgressBars();
+        }
+      },
+    }).init();
+  </script>
+
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////
+                               START SECTION 1 - THE NAVBAR SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////////-->
+  <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="">
+        <img src="images/output-onlinepngtools.png" style="margin-left: 20%;  width: 160px; height:65px;"
+          alt="logo image">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">contact</a>
+          </li>
+        </ul>
+        <button id="myInput" onclick="myFunction()" type="button" class="rounded-pill btn-rounded">
+          +91 8870823254
+          <span>
+            <i class="fas fa-phone-alt"></i>
+          </span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////
+                            START SECTION 2 - The Intro 
+/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+  <section id="home" class="intro-section">
+    <div class="container">
+      <div class="row align-items-center text-white">
+        <!-- START THE CONTENT FOR THE INTRO  -->
+        <div class="col-md-6 intros text-start">
+          <h1 class="display-2">
+            <span class="display-2--intro">Hey!, I'm Viyaas</span>
+            <span class="display-2--description lh-base">
+              Full Stack Developer
+            </span>
+          </h1>
+          <button type="button"
+            onclick="window.location.href='https://drive.google.com/file/d/1pqL3TE8M0j8879eWE3wAnD6-84D5oJzA/view?usp=sharing'"
+            class="rounded-pill btn-rounded">Hire me
+            <span><i class="fas fa-arrow-right"></i></span>
+          </button>
+        </div>
+        <!-- START THE CONTENT FOR THE VIDEO -->
+        <div class="col-md-6 intros text-end">
+          <div class="video-box">
+            <img src="images/arts/intro-section-illustration.png" alt="video illutration" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffffff" fill-opacity="1"
+        d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////
+                             START SECTION 3 - The Education
+////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+  <section id="campanies">
+    <div class="container-fluid">
+      <div class="row text-center">
+        <h4 class="display-4 fw-bold">Education</h4>
+        <div class="heading-line mb-5"></div>
+      </div>
+    </div>
+    <!-- START THE CAMPANIES CONTENT  -->
+    <div class="experience" id="experience">
+      <div class="container-fluid">
+        <div class="timeline">
+          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.2s">
+            <div class="timeline-text">
+              <div class="timeline-date">Aug 2021 - Present</div>
+              <h2>B.E - Computer Science and Engineering </h2>
+              <h4>Dr. Mahalingam College of Engineering and Technology</h4>
+              <h4>Pollachi, Tamilnadu</h4>
+              <p>
+                CGPA - 8 (Till 6th Sem)
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item right wow slideInRight" data-wow-delay="0.2s">
+            <div class="timeline-text">
+              <div class="timeline-date">Jun 2019 - May 2021</div>
+              <h2>HIGHER SECONDARY SCHOOL - STATE BOARD</h2>
+              <h4> Rajalakshmi Gengusamy Higher Secondary School</h4>
+              <h4>Manoorpalayam, Tiruppur, Tamilnadu</h4>
+              <p>
+                Percent - 92.8%
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+            <div class="timeline-text">
+              <div class="timeline-date">Jun 2018 - May 2019</div>
+              <h2>SECONDARY SCHOOL - STATE BOARD</h2>
+              <h4> Rajalakshmi Gengusamy Higher Secondary School</h4>
+              <h4>Manoorpalayam, Tiruppur, Tamilnadu</h4>
+              <p>
+                Percent - 90.8%
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////
+                         START SECTION 4 - The About
+///////////////////////////////////////////////////////////////////////////////////////////////////-->
+  <section id="about" class="services">
+    <div class="container">
+      <div class="row text-center">
+        <h1 class="display-3 fw-bold">About</h1>
+        <div class="heading-line mb-1"></div>
+      </div>
+      <!-- START THE DESCRIPTION CONTENT  -->
+      <div class="row pt-2 pb-2 mt-0 mb-3">
+        <div class="col-md-6 border-right">
+          <div class="bg-white p-3">
+            <h2 class="fw-bold text-capitalize text-center">
+              A Passionate Computer Science Engineer
+            </h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="bg-white p-4 text-start">
+            <p class="fw-light">
+              Computer Science Engineer actively acquiring programming
+              knowledge and eager to contribute to diverse projects.
+              Seeking a challenging role where technical skills, creativity,
+              and teamwork can fuel innovation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- START THE CONTENT FOR THE SERVICES  -->
+    <div class="container">
+      <!-- START THE MARKETING CONTENT  -->
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+          <div class="services__content">
+            <div class="icon d-block fas fa-paper-plane"></div>
+            <h3 class="display-3--title mt-1">Internship</h3>
+            <p class="lh-lg">
+              Internship at VFind.in Technologies, Coimbatore on Internet Of
+              Things & MQTT protocols through virtual mode.
+            </p>
+            <button type="button"
+              onclick="window.location.href='https://drive.google.com/file/d/1uJOhUzXRYnAbrMH7f3H8o5CWi65u4GE7/view?usp=sharing'"
+              class="rounded-pill btn-rounded border-primary">View Certificate
+              <span><i class="fas fa-arrow-right"></i></span>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+          <div class="services__pic">
+            <img src="images/services/img1.png" alt="marketing illustration" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <!-- START THE WEB DEVELOPMENT CONTENT  -->
+      <br><br><br>
+      <div class="row text-center">
+        <h1 class="display-4 fw-bold">Skills</h1>
+        <div class="heading-line mb-1"></div>
+      </div>
+
+      <div class="skills">
+        <div class="skill-name wow animate__animated animate__fadeIn">
+          <p>Java</p>
+          <p>90%</p>
+        </div>
+        <div class="progress">
+          <div class="progress-bar wow animate__animated animate__fadeInLeft" role="progressbar" data-progress="90"
+            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="skill-name wow animate__animated animate__fadeIn">
+          <p>C - Programming</p>
+          <p>95%</p>
+        </div>
+        <div class="progress">
+          <div class="progress-bar wow animate__animated animate__fadeInLeft" role="progressbar" data-progress="95"
+            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="skill-name wow animate__animated animate__fadeIn">
+          <p>Python</p>
+          <p>60%</p>
+        </div>
+        <div class="progress">
+          <div class="progress-bar wow animate__animated animate__fadeInLeft" role="progressbar" data-progress="60"
+            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="skill-name wow animate__animated animate__fadeIn">
+          <p>SQL</p>
+          <p>70%</p>
+        </div>
+        <div class="progress">
+          <div class="progress-bar wow animate__animated animate__fadeInLeft" role="progressbar" data-progress="70"
+            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////////////
+                               START SECTION 5 - The Certifications
+/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+  <section id="certifications" class="testimonials">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+      </path>
+    </svg>
+    <div class="container">
+      <div class="row text-center text-white">
+        <h1 class="display-4 fw-bold">Certifications</h1>
+        <hr style="width: 100px; height: 3px;" class="mx-auto">
+      </div>
+      <br>
+      <div class="row align-items-center">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <!-- CAROUSEL ITEM 1 -->
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-6 text-center">
+                  <a href="https://drive.google.com/file/d/1PZUy2vXINg-bnExcLNeoxScAY4rXhic6/view?usp=sharing"
+                    class="image-link">
+                    <img src="images/certificates/cprgm.png" alt="CPRGM Certificate">
+                    <div class="overlay">
+                      <h1 style="font-style: italic;">
+                        <span class="certificate-name">C - Certificate</span>
+                      </h1>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-6 text-center">
+                  <a href="https://drive.google.com/file/d/1HBkmdRzd55YgeiR5EkvvKEbLJUaPYL_d/view?usp=drive_link"
+                    class="image-link">
+                    <img src="images/certificates/python.png" alt="Python Certificate">
+                    <div class="overlay">
+                      <h1 style="font-style: italic;">
+                        <span class="certificate-name">Python Certificate</span>
+                      </h1>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CAROUSEL ITEM 2 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6 text-center">
+                  <a href="https://drive.google.com/file/d/1Cr8RGkn7AHH6pLg3ctfJP21giYCgWrJ4/view?usp=sharing"
+                    class="image-link">
+                    <img src="images/certificates/java.png" alt="Java Certificate">
+                    <div class="overlay">
+                      <h1 style="font-style: italic;">
+                        <span class="certificate-name">Java Certificate</span>
+                      </h1>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-6 text-center">
+                  <a href="https://drive.google.com/file/d/1dS1F9j09WIBvIWeK_zuvJBKEPfciNpy0/view?usp=sharing"
+                    class="image-link">
+                    <img src="images/certificates/springboard.png" alt="Springboard Certificate">
+                    <div class="overlay">
+                      <h1 style="font-style: italic;">
+                        <span class="certificate-name">Springboard Certificate</span>
+                      </h1>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CAROUSEL ITEM 3 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6 text-center">
+                  <a href="https://drive.google.com/file/d/1-2hZj5vwwyaedwbeWaC1lu7LafAKia7P/view?usp=sharing"
+                    class="image-link">
+                    <img src="images/certificates/eshwar.png" alt="Eshwar Certificate">
+                    <div class="overlay">
+                      <h1 style="font-style: italic;">
+                        <span class="certificate-name">Eshwar Certificate</span>
+                      </h1>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-6 text-center">
+                  <a href="https://drive.google.com/file/d/1tJVOxOX8DjyskIVk36KdKWosJkR4FD5B/view?usp=sharing"
+                    class="image-link">
+                    <img src="images/certificates/srec.png" alt="SREC Certificate">
+                    <div class="overlay">
+                      <h1 style="font-style: italic;">
+                        <span class="certificate-name">SREC Certificate</span>
+                      </h1>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <br><br>
+          <div class="text-center">
+            <button class="btn btn-outline-light fas fa-long-arrow-alt-left" type="button"
+              data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"></button>
+            <button class="btn btn-outline-light fas fa-long-arrow-alt-right" type="button"
+              data-bs-target="#carouselExampleCaptions" data-bs-slide="next"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////
+                              START SECTION 6 - THE Projects
+//////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+  <section id="projects" class="portfolio">
+    <div class="container">
+      <div class="row text-center mt-5">
+        <h1 class="display-3 fw-bold text-capitalize">Projects</h1>
+        <div class="heading-line"></div>
+      </div>
+      <br><br>
+      <!-- START THE PORTFOLIO ITEMS  -->
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="images/portfolio/IOT-1.png" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>AUTOMATIC ACCIDENT DETECTION AND ALERT SYSTEM</h4>
+                <p>Internet of Things</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="images/portfolio/ticket.webp" alt="portfolio 2 image" title="portfolio 2 picture"
+              class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4> ONLINE BUS TICKET BOOKING SYSTEM</h4>
+                <p>FrontEnd project</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="images/portfolio/Designer.jpeg" alt="portfolio 3 image" title="portfolio 3 picture"
+              class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>GESTURE - BASED CONTROL FOR SMART HOMES</h4>
+                <p>Internet of Things</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////
+              START SECTION 7 - GET STARTED  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+  <section id="contact" class="get-started">
+    <div class="container">
+      <div class="row text-center">
+        <h1 class="display-3 fw-bold text-capitalize">Contact Me</h1>
+        <div class="heading-line"></div>
+      </div>
+      <br>
+      <!-- START THE CTA CONTENT  -->
+      <form onsubmit="emailsend(); reset(); return false;" class="row">
+        <div class="row text-white">
+          <div class="col-12 col-lg-6 gradient shadow p-3">
+            <div class="cta-info w-100">
+              <h4 class="display-4 fw-bold mb-3">Mail me</h4>
+              <div class="col-lg-12 col-md mb-3">
+                <input type="text" name="firstName" placeholder="First Name" id="inputFirstName"
+                  class="shadow form-control form-control-lg" required>
+              </div>
+              <div class="col-lg-12 col-md mb-3">
+                <input type="text" name="lastName" placeholder="Last Name" id="inputLastName"
+                  class="shadow form-control form-control-lg" required>
+              </div>
+              <div class="col-lg-12 mb-3">
+                <input type="email" name="email" placeholder="Email Address" id="inputEmail"
+                  class="shadow form-control form-control-lg" required>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 bg-white shadow p-3">
+            <div class="form w-100 pb-2">
+              <div class="col-lg-12 mb-3">
+                <textarea name="message" placeholder="Message" id="message" rows="8"
+                  class="shadow form-control form-control-lg" required></textarea>
+              </div>
+              <div class="text-center d-grid mt-1">
+                <br>
+                <button type="submit" class="btn btn-primary rounded-pill pt-3 pb-3">
+                  Submit
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////////
+                           START SECTION 8 - THE FOOTER  
+///////////////////////////////////////////////////////////////////////////////////////////////-->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- CONTENT FOR THE MOBILE NUMBER  -->
+        <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+          <div class="contact-box__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" viewBox="0 0 24 24"
+              stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+              <path d="M15 7a2 2 0 0 1 2 2" />
+              <path d="M15 3a6 6 0 0 1 6 6" />
+            </svg>
+          </div>
+          <div class="contact-box__info">
+            <a id="myInput" onclick="myFunction()" class="contact-box__info--title">+91 8870823254</a>
+            <p class="contact-box__info--subtitle"> Mobile Number</p>
+          </div>
+        </div>
+        <!-- CONTENT FOR EMAIL  -->
+        <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+          <div class="contact-box__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-opened" viewBox="0 0 24 24"
+              stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <polyline points="3 9 12 15 21 9 12 3 3 9" />
+              <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+              <line x1="3" y1="19" x2="9" y2="13" />
+              <line x1="15" y1="13" x2="21" y2="19" />
+            </svg>
+          </div>
+          <div class="contact-box__info">
+            <a href="mailto:viyaaskge@gmail.com" class="contact-box__info--title">viyaaskge@gmail.com</a>
+            <p class="contact-box__info--subtitle">Mail</p>
+          </div>
+        </div>
+        <!-- CONTENT FOR LOCATION  -->
+        <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+          <div class="contact-box__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" viewBox="0 0 24 24"
+              stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <line x1="18" y1="6" x2="18" y2="6.01" />
+              <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5" />
+              <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
+              <line x1="9" y1="4" x2="9" y2="17" />
+              <line x1="15" y1="15" x2="15" y2="20" />
+            </svg>
+          </div>
+          <div class="contact-box__info">
+            <a href="https://www.google.com/maps/place//@10.7878945,77.2775098,13.93z?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D"
+              class="contact-box__info--title">Tiruppur, Tamil Nadu</a>
+            <p class="contact-box__info--subtitle">641671</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- START THE SOCIAL MEDIA CONTENT  -->
+    <div class="footer-sm" style="background-color: #212121;">
+      <div class="container">
+        <div class="row py-4 text-center text-white">
+          <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+            connect with me on social media
+          </div>
+          <div class="col-lg-7 col-md-6">
+            <a href="https://github.com/viyaas"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/viyaas-k-g-e-27b790252"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/_viyaas_/"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- START THE CONTENT FOR THE CAMPANY INFO -->
+
+    <!-- START THE COPYRIGHT INFO  -->
+    <div class="footer-bottom pt-5 pb-5">
+      <div class="container">
+        <div class="row text-center text-white">
+          <div class="col-12">
+            <div class="footer-bottom__copyright">
+              copyright &copy; By Viyaas | All rights reserved.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON  -->
+  <a href="#" class="shadow btn-primary rounded-circle back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+  <script src="assets/vendors/js/glightbox.min.js"></script>
+
+  <script type="text/javascript">
+    const lightbox = GLightbox({
+      'touchNavigation': true,
+      'href': 'https://www.youtube.com/watch?v=J9lS14nM1xg',
+      'type': 'video',
+      'source': 'youtube', //vimeo, youtube or local
+      'width': 900,
+      'autoPlayVideos': 'true',
+    });
+
+  </script>
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
