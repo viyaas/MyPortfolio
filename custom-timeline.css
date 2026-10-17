@@ -112,7 +112,7 @@
     border-left: 5px solid #dddddd;
 }
 
-.experience .timeline .timeline-text h2 {
+.experience .timeline .timeline-text h3 {
     margin: 0 0 5px 0;
     font-size: 1.25rem;
     font-weight: 600;
@@ -133,48 +133,29 @@
     color: #797979;
 }
 
-/* Animation styles */
-.wow {
-    visibility: visible;
+/* Scroll reveal (toggled by custom-timeline.js) */
+.reveal {
+    opacity: 0;
+    transition: opacity .7s ease, transform .7s ease;
 }
 
-.wow.slideInLeft {
-    animation-name: slideInLeft;
-    animation-duration: 1.5s;
-    animation-fill-mode: both;
-    animation-delay: 0.1s;
+.reveal-left { transform: translateX(-40px); }
+.reveal-right { transform: translateX(40px); }
+
+.reveal.in-view {
+    opacity: 1;
+    transform: none;
 }
 
-.wow.slideInRight {
-    animation-name: slideInRight;
-    animation-duration: 1.5s;
-    animation-fill-mode: both;
-    animation-delay: 0.1s;
-}
-
-@keyframes slideInLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
         opacity: 1;
+        transform: none;
+        transition: none;
     }
 }
 
-@keyframes slideInRight {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@media (max-width: 750.98px) {
+@media (max-width: 991.98px) {
     .experience .timeline::after {
         left: 8px;
     }
@@ -378,4 +359,94 @@
   #certifications .image-link:hover img {
     transform: scale(1.05); /* Slightly enlarge the image */
   }
+
+/*******************************/
+/***** Layout and mobile *******/
+/*******************************/
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 80px; }
+body { overflow-x: hidden; }
+img { max-width: 100%; height: auto; }
+
+.site-logo img { margin-left: 1rem; width: 160px; height: auto; }
+
+.btn-rounded { color: #212529; text-decoration: none; }
+.btn-rounded:hover { color: #fff; }
+.nav-call { display: inline-block; }
+
+.experience .timeline-text ul { margin: 0; padding-left: 1.1rem; font-size: 0.9rem; color: #797979; }
+.experience .timeline-text li + li { margin-top: 0.35rem; }
+
+.skill-tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.skill-tags li {
+    padding: 0.35rem 0.9rem;
+    border: 1px solid #9926f0;
+    border-radius: 2rem;
+    color: #9926f0;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.portfolio-box img { object-fit: cover; }
+.certificate-name { font-style: italic; font-size: 1.75rem; font-weight: 700; }
+.form-status { min-height: 1.5rem; font-weight: 600; }
+.contact-box__info--title { overflow-wrap: anywhere; }
+
+/* Tablets and below */
+@media (max-width: 991.98px) {
+    .reveal-left, .reveal-right { transform: translateY(24px); }
+    .site-logo img { margin-left: 0; }
+    .menu .navbar-nav { padding: 0.5rem 0; }
+    .menu .navbar-nav li { padding: 0; }
+    .nav-call { margin: 0.5rem 0 1rem; }
+    .intro-section { padding-top: 8rem; }
+    .intros { text-align: center !important; margin-bottom: 1.5rem; }
+    .services__content { text-align: center; }
+    .skills { padding-left: 0; padding-right: 0; }
+}
+
+/* Phones */
+@media (max-width: 575.98px) {
+    .intro-section { padding-top: 7rem; }
+    .display-2 { font-size: 2.2rem; }
+    .display-3 { font-size: 2rem; }
+    .display-4 { font-size: 1.75rem; }
+    .experience { padding-top: 20px; }
+    .experience .timeline-text { padding: 20px; }
+    .experience .timeline .timeline-text h3 { font-size: 1.1rem; }
+    .cta-info, .form { padding: 1rem; }
+    .cta-info h3 { font-size: 1.75rem; }
+    .portfolio { padding: 2rem 0; }
+    .portfolio-box { height: 15rem; }
+    .certificate-name { font-size: 1.1rem; }
+    .get-started { padding: 2rem 0; }
+    .back-to-top { right: 1rem; bottom: 1rem; }
+    .footer-sm .row > div { margin-bottom: 0.5rem; }
+}
+
+/* Touch devices have no hover, so keep captions visible */
+@media (hover: none) {
+    #certifications .overlay {
+        opacity: 1;
+        top: auto;
+        bottom: 0;
+        height: auto;
+        padding: 0.4rem;
+        background-color: rgba(153, 38, 240, 0.8);
+    }
+    .portfolio-box .portfolio-info {
+        opacity: 1;
+        visibility: visible;
+        background: linear-gradient(to top, rgba(153, 38, 240, 0.9), rgba(153, 38, 240, 0.1) 70%);
+    }
+    .portfolio-box .portfolio-info .caption {
+        top: auto;
+        bottom: 0.75rem;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+    .portfolio-box .portfolio-info .caption h4 { font-size: 1rem; margin-bottom: 0.25rem; }
+    .portfolio-box .portfolio-info .caption p { margin: 0; font-size: 0.85rem; }
+    .portfolio-box:hover img { transform: none; }
+}
   

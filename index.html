@@ -3,68 +3,56 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Viyaas K G E - Portfolio</title>
+  <title>Viyaas K G E | Backend Software Engineer at Zoho</title>
+  <meta name="description"
+    content="Portfolio of Viyaas K G E, Member Technical Staff at Zoho (ZohoLogs). Java backend developer with experience in REST APIs, IoT and automated testing.">
+  <meta name="author" content="Viyaas K G E">
+  <meta name="theme-color" content="#9926f0">
+  <link rel="canonical" href="https://viyaas.github.io/MyPortfolio/">
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Viyaas K G E | Backend Software Engineer at Zoho">
+  <meta property="og:description"
+    content="Java backend developer at Zoho. Experience, education, certifications and projects.">
+  <meta property="og:url" content="https://viyaas.github.io/MyPortfolio/">
+  <meta property="og:image" content="https://viyaas.github.io/MyPortfolio/images/arts/intro-section-illustration.png">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/fontawesome.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-
-
-  <!-- Include custom timeline CSS -->
   <link rel="stylesheet" href="custom-timeline.css">
 
-  <!-- Include Wow.js library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Viyaas K G E",
+    "jobTitle": "Member Technical Staff",
+    "worksFor": { "@type": "Organization", "name": "Zoho Corporation" },
+    "url": "https://viyaas.github.io/MyPortfolio/",
+    "sameAs": [
+      "https://github.com/viyaas",
+      "https://www.linkedin.com/in/viyaas-k-g-e-27b790252",
+      "https://www.instagram.com/_viyaas_/"
+    ]
+  }
+  </script>
 </head>
 
 <body>
-  <script src="custom-timeline.js"></script>
-  <script>
-    // Function to animate progress bars on wow.js trigger
-    function animateProgressBars() {
-      const progressBars = document.querySelectorAll('.progress-bar');
-      progressBars.forEach(bar => {
-        const value = bar.getAttribute('data-progress');
-        bar.style.width = value + '%';
-        bar.setAttribute('aria-valuenow', value);
-      });
-    }
-
-    // Initialize WOW.js
-    new WOW({
-      boxClass: 'wow',      // default
-      animateClass: 'animate__animated', // default
-      offset: 0,          // distance to the element when triggering the animation (default is 0)
-      mobile: true,       // trigger animations on mobile devices (default is true)
-      live: true,         // act on asynchronously loaded content (default is true)
-      callback: function (box) {
-        // Trigger progress bar animation when it becomes visible
-        if (box.classList.contains('progress-bar')) {
-          animateProgressBars();
-        }
-      },
-    }).init();
-  </script>
-
   <!-- ////////////////////////////////////////////////////////////////////////////////////////
                                START SECTION 1 - THE NAVBAR SECTION  
 /////////////////////////////////////////////////////////////////////////////////////////////-->
   <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="">
-        <img src="images/output-onlinepngtools.png" style="margin-left: 20%;  width: 160px; height:65px;"
-          alt="logo image">
+      <a class="navbar-brand site-logo" href="#home">
+        <img src="images/output-onlinepngtools.png" width="160" height="65" alt="Viyaas logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,19 +60,20 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">contact</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-        <button id="myInput" onclick="myFunction()" type="button" class="rounded-pill btn-rounded">
+        <a href="tel:+918870823254" class="rounded-pill btn-rounded nav-call">
           +91 8870823254
           <span>
             <i class="fas fa-phone-alt"></i>
           </span>
-        </button>
+        </a>
       </div>
     </div>
   </nav>
@@ -101,19 +90,20 @@
           <h1 class="display-2">
             <span class="display-2--intro">Hey!, I'm Viyaas</span>
             <span class="display-2--description lh-base">
-              Full Stack Developer
+              Backend Software Engineer<br>
+              <small class="d-block mt-2 fw-light">Member Technical Staff @ Zoho &middot; ZohoLogs</small>
             </span>
           </h1>
-          <button type="button"
-            onclick="window.location.href='https://drive.google.com/file/d/1pqL3TE8M0j8879eWE3wAnD6-84D5oJzA/view?usp=sharing'"
-            class="rounded-pill btn-rounded">Hire me
+          <a href="https://drive.google.com/file/d/1pqL3TE8M0j8879eWE3wAnD6-84D5oJzA/view?usp=sharing"
+            target="_blank" rel="noopener" class="rounded-pill btn-rounded d-inline-block">View Resume
             <span><i class="fas fa-arrow-right"></i></span>
-          </button>
+          </a>
         </div>
         <!-- START THE CONTENT FOR THE VIDEO -->
-        <div class="col-md-6 intros text-end">
+        <div class="col-md-6 intros text-center text-md-end">
           <div class="video-box">
-            <img src="images/arts/intro-section-illustration.png" alt="video illutration" class="img-fluid">
+            <img src="images/arts/intro-section-illustration.png" alt="Illustration of a developer at work"
+              class="img-fluid" width="560" height="420">
           </div>
         </div>
       </div>
@@ -129,44 +119,85 @@
                              START SECTION 3 - The Education
 ////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-  <section id="campanies">
+  <section id="experience">
     <div class="container-fluid">
       <div class="row text-center">
-        <h4 class="display-4 fw-bold">Education</h4>
+        <h2 class="display-4 fw-bold">Experience</h2>
         <div class="heading-line mb-5"></div>
       </div>
     </div>
-    <!-- START THE CAMPANIES CONTENT  -->
-    <div class="experience" id="experience">
+    <div class="experience">
       <div class="container-fluid">
         <div class="timeline">
-          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.2s">
+          <div class="timeline-item left reveal reveal-left">
             <div class="timeline-text">
-              <div class="timeline-date">Aug 2021 - Present</div>
-              <h2>B.E - Computer Science and Engineering </h2>
+              <div class="timeline-date">May 2025 - Present</div>
+              <h3>Member Technical Staff</h3>
+              <h4>Zoho Corporation &middot; ZohoLogs</h4>
+              <h4>Palladam, Coimbatore, Tamil Nadu</h4>
+              <ul>
+                <li>Develop and maintain Java backend services for ZohoLogs, a log management platform.</li>
+                <li>Build REST APIs, notification and email workflows, and automated API test suites.</li>
+                <li>Handle dependency upgrades, configuration changes and production fixes.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item right reveal reveal-right">
+            <div class="timeline-text">
+              <div class="timeline-date">Apr 2025 - May 2025</div>
+              <h3>Intern</h3>
+              <h4>Zoho Corporation &middot; ZohoLogs</h4>
+              <h4>Palladam, Coimbatore, Tamil Nadu</h4>
+              <p>Onboarded to the Logs team and worked on the codebase before converting to a full-time role.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////
+                             START SECTION 3 - The Education
+////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+  <section id="education">
+    <div class="container-fluid">
+      <div class="row text-center">
+        <h2 class="display-4 fw-bold">Education</h2>
+        <div class="heading-line mb-5"></div>
+      </div>
+    </div>
+    <!-- START THE EDUCATION CONTENT  -->
+    <div class="experience">
+      <div class="container-fluid">
+        <div class="timeline">
+          <div class="timeline-item left reveal reveal-left">
+            <div class="timeline-text">
+              <div class="timeline-date">Aug 2021 - May 2025</div>
+              <h3>B.E - Computer Science and Engineering</h3>
               <h4>Dr. Mahalingam College of Engineering and Technology</h4>
               <h4>Pollachi, Tamilnadu</h4>
               <p>
-                CGPA - 8 (Till 6th Sem)
+                CGPA - 8
               </p>
             </div>
           </div>
-          <div class="timeline-item right wow slideInRight" data-wow-delay="0.2s">
+          <div class="timeline-item right reveal reveal-right">
             <div class="timeline-text">
               <div class="timeline-date">Jun 2019 - May 2021</div>
-              <h2>HIGHER SECONDARY SCHOOL - STATE BOARD</h2>
-              <h4> Rajalakshmi Gengusamy Higher Secondary School</h4>
+              <h3>HIGHER SECONDARY SCHOOL - STATE BOARD</h3>
+              <h4>Rajalakshmi Gengusamy Higher Secondary School</h4>
               <h4>Manoorpalayam, Tiruppur, Tamilnadu</h4>
               <p>
                 Percent - 92.8%
               </p>
             </div>
           </div>
-          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+          <div class="timeline-item left reveal reveal-left">
             <div class="timeline-text">
               <div class="timeline-date">Jun 2018 - May 2019</div>
-              <h2>SECONDARY SCHOOL - STATE BOARD</h2>
-              <h4> Rajalakshmi Gengusamy Higher Secondary School</h4>
+              <h3>SECONDARY SCHOOL - STATE BOARD</h3>
+              <h4>Rajalakshmi Gengusamy Higher Secondary School</h4>
               <h4>Manoorpalayam, Tiruppur, Tamilnadu</h4>
               <p>
                 Percent - 90.8%
@@ -184,7 +215,7 @@
   <section id="about" class="services">
     <div class="container">
       <div class="row text-center">
-        <h1 class="display-3 fw-bold">About</h1>
+        <h2 class="display-3 fw-bold">About</h2>
         <div class="heading-line mb-1"></div>
       </div>
       <!-- START THE DESCRIPTION CONTENT  -->
@@ -199,10 +230,9 @@
         <div class="col-md-6">
           <div class="bg-white p-4 text-start">
             <p class="fw-light">
-              Computer Science Engineer actively acquiring programming
-              knowledge and eager to contribute to diverse projects.
-              Seeking a challenging role where technical skills, creativity,
-              and teamwork can fuel innovation.
+              Computer Science graduate (B.E., 2025) working as Member Technical Staff at Zoho on the
+              ZohoLogs team, building Java backend services, REST APIs and automated tests. Interested in
+              distributed systems, IoT and writing clean, maintainable code.
             </p>
           </div>
         </div>
@@ -221,59 +251,67 @@
               Internship at VFind.in Technologies, Coimbatore on Internet Of
               Things & MQTT protocols through virtual mode.
             </p>
-            <button type="button"
-              onclick="window.location.href='https://drive.google.com/file/d/1uJOhUzXRYnAbrMH7f3H8o5CWi65u4GE7/view?usp=sharing'"
-              class="rounded-pill btn-rounded border-primary">View Certificate
+            <a href="https://drive.google.com/file/d/1uJOhUzXRYnAbrMH7f3H8o5CWi65u4GE7/view?usp=sharing"
+              target="_blank" rel="noopener" class="rounded-pill btn-rounded border-primary d-inline-block">View Certificate
               <span><i class="fas fa-arrow-right"></i></span>
-            </button>
+            </a>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-center text-md-end">
           <div class="services__pic">
-            <img src="images/services/img1.png" alt="marketing illustration" class="img-fluid">
+            <img src="images/services/img1.png" alt="Illustration representing the internship" class="img-fluid"
+              loading="lazy">
           </div>
         </div>
       </div>
       <!-- START THE WEB DEVELOPMENT CONTENT  -->
       <br><br><br>
       <div class="row text-center">
-        <h1 class="display-4 fw-bold">Skills</h1>
+        <h2 class="display-4 fw-bold">Skills</h2>
         <div class="heading-line mb-1"></div>
       </div>
 
       <div class="skills">
-        <div class="skill-name wow animate__animated animate__fadeIn">
+        <div class="skill-name">
           <p>Java</p>
           <p>90%</p>
         </div>
         <div class="progress">
-          <div class="progress-bar wow animate__animated animate__fadeInLeft" role="progressbar" data-progress="90"
+          <div class="progress-bar" role="progressbar" data-progress="90" aria-label="Java"
             aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        <div class="skill-name wow animate__animated animate__fadeIn">
+        <div class="skill-name">
           <p>C - Programming</p>
           <p>95%</p>
         </div>
         <div class="progress">
-          <div class="progress-bar wow animate__animated animate__fadeInLeft" role="progressbar" data-progress="95"
+          <div class="progress-bar" role="progressbar" data-progress="95" aria-label="C programming"
             aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        <div class="skill-name wow animate__animated animate__fadeIn">
+        <div class="skill-name">
           <p>Python</p>
           <p>60%</p>
         </div>
         <div class="progress">
-          <div class="progress-bar wow animate__animated animate__fadeInLeft" role="progressbar" data-progress="60"
+          <div class="progress-bar" role="progressbar" data-progress="60" aria-label="Python"
             aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        <div class="skill-name wow animate__animated animate__fadeIn">
+        <div class="skill-name">
           <p>SQL</p>
           <p>70%</p>
         </div>
         <div class="progress">
-          <div class="progress-bar wow animate__animated animate__fadeInLeft" role="progressbar" data-progress="70"
+          <div class="progress-bar" role="progressbar" data-progress="70" aria-label="SQL"
             aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
+
+        <h3 class="h5 fw-bold mt-4 mb-3">Also working with</h3>
+        <ul class="skill-tags">
+          <li>REST APIs</li>
+          <li>TestNG</li>
+          <li>Git</li>
+          <li>Linux</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -289,7 +327,7 @@
     </svg>
     <div class="container">
       <div class="row text-center text-white">
-        <h1 class="display-4 fw-bold">Certifications</h1>
+        <h2 class="display-4 fw-bold">Certifications</h2>
         <hr style="width: 100px; height: 3px;" class="mx-auto">
       </div>
       <br>
@@ -303,22 +341,18 @@
                 <div class="col-md-6 text-center">
                   <a href="https://drive.google.com/file/d/1PZUy2vXINg-bnExcLNeoxScAY4rXhic6/view?usp=sharing"
                     class="image-link">
-                    <img src="images/certificates/cprgm.png" alt="CPRGM Certificate">
+                    <img src="images/certificates/cprgm.png" alt="C programming certificate" width="600" height="420">
                     <div class="overlay">
-                      <h1 style="font-style: italic;">
-                        <span class="certificate-name">C - Certificate</span>
-                      </h1>
+                      <span class="certificate-name">C - Certificate</span>
                     </div>
                   </a>
                 </div>
                 <div class="col-md-6 text-center">
                   <a href="https://drive.google.com/file/d/1HBkmdRzd55YgeiR5EkvvKEbLJUaPYL_d/view?usp=drive_link"
                     class="image-link">
-                    <img src="images/certificates/python.png" alt="Python Certificate">
+                    <img src="images/certificates/python.png" alt="Python certificate" loading="lazy">
                     <div class="overlay">
-                      <h1 style="font-style: italic;">
-                        <span class="certificate-name">Python Certificate</span>
-                      </h1>
+                      <span class="certificate-name">Python Certificate</span>
                     </div>
                   </a>
                 </div>
@@ -331,22 +365,18 @@
                 <div class="col-md-6 text-center">
                   <a href="https://drive.google.com/file/d/1Cr8RGkn7AHH6pLg3ctfJP21giYCgWrJ4/view?usp=sharing"
                     class="image-link">
-                    <img src="images/certificates/java.png" alt="Java Certificate">
+                    <img src="images/certificates/java.png" alt="Java certificate" loading="lazy">
                     <div class="overlay">
-                      <h1 style="font-style: italic;">
-                        <span class="certificate-name">Java Certificate</span>
-                      </h1>
+                      <span class="certificate-name">Java Certificate</span>
                     </div>
                   </a>
                 </div>
                 <div class="col-md-6 text-center">
                   <a href="https://drive.google.com/file/d/1dS1F9j09WIBvIWeK_zuvJBKEPfciNpy0/view?usp=sharing"
                     class="image-link">
-                    <img src="images/certificates/springboard.png" alt="Springboard Certificate">
+                    <img src="images/certificates/springboard.png" alt="Springboard certificate" loading="lazy">
                     <div class="overlay">
-                      <h1 style="font-style: italic;">
-                        <span class="certificate-name">Springboard Certificate</span>
-                      </h1>
+                      <span class="certificate-name">Springboard Certificate</span>
                     </div>
                   </a>
                 </div>
@@ -359,22 +389,18 @@
                 <div class="col-md-6 text-center">
                   <a href="https://drive.google.com/file/d/1-2hZj5vwwyaedwbeWaC1lu7LafAKia7P/view?usp=sharing"
                     class="image-link">
-                    <img src="images/certificates/eshwar.png" alt="Eshwar Certificate">
+                    <img src="images/certificates/eshwar.png" alt="Eshwar certificate" loading="lazy">
                     <div class="overlay">
-                      <h1 style="font-style: italic;">
-                        <span class="certificate-name">Eshwar Certificate</span>
-                      </h1>
+                      <span class="certificate-name">Eshwar Certificate</span>
                     </div>
                   </a>
                 </div>
                 <div class="col-md-6 text-center">
                   <a href="https://drive.google.com/file/d/1tJVOxOX8DjyskIVk36KdKWosJkR4FD5B/view?usp=sharing"
                     class="image-link">
-                    <img src="images/certificates/srec.png" alt="SREC Certificate">
+                    <img src="images/certificates/srec.png" alt="SREC certificate" loading="lazy">
                     <div class="overlay">
-                      <h1 style="font-style: italic;">
-                        <span class="certificate-name">SREC Certificate</span>
-                      </h1>
+                      <span class="certificate-name">SREC Certificate</span>
                     </div>
                   </a>
                 </div>
@@ -384,9 +410,9 @@
           </div>
           <br><br>
           <div class="text-center">
-            <button class="btn btn-outline-light fas fa-long-arrow-alt-left" type="button"
+            <button class="btn btn-outline-light fas fa-long-arrow-alt-left" type="button" aria-label="Previous"
               data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"></button>
-            <button class="btn btn-outline-light fas fa-long-arrow-alt-right" type="button"
+            <button class="btn btn-outline-light fas fa-long-arrow-alt-right" type="button" aria-label="Next"
               data-bs-target="#carouselExampleCaptions" data-bs-slide="next"></button>
           </div>
         </div>
@@ -406,7 +432,7 @@
   <section id="projects" class="portfolio">
     <div class="container">
       <div class="row text-center mt-5">
-        <h1 class="display-3 fw-bold text-capitalize">Projects</h1>
+        <h2 class="display-3 fw-bold text-capitalize">Projects</h2>
         <div class="heading-line"></div>
       </div>
       <br><br>
@@ -414,7 +440,7 @@
       <div class="row">
         <div class="col-lg-4 col-md-6">
           <div class="portfolio-box shadow">
-            <img src="images/portfolio/IOT-1.png" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
+            <img src="images/portfolio/IOT-1.png" alt="Automatic accident detection and alert system" loading="lazy">
             <div class="portfolio-info">
               <div class="caption">
                 <h4>AUTOMATIC ACCIDENT DETECTION AND ALERT SYSTEM</h4>
@@ -425,11 +451,10 @@
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="portfolio-box shadow">
-            <img src="images/portfolio/ticket.webp" alt="portfolio 2 image" title="portfolio 2 picture"
-              class="img-fluid">
+            <img src="images/portfolio/ticket.webp" alt="Online bus ticket booking system" loading="lazy">
             <div class="portfolio-info">
               <div class="caption">
-                <h4> ONLINE BUS TICKET BOOKING SYSTEM</h4>
+                <h4>Online Bus Ticket Booking System</h4>
                 <p>FrontEnd project</p>
               </div>
             </div>
@@ -437,8 +462,7 @@
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="portfolio-box shadow">
-            <img src="images/portfolio/Designer.jpeg" alt="portfolio 3 image" title="portfolio 3 picture"
-              class="img-fluid">
+            <img src="images/portfolio/Designer.jpeg" alt="Gesture based control for smart homes" loading="lazy">
             <div class="portfolio-info">
               <div class="caption">
                 <h4>GESTURE - BASED CONTROL FOR SMART HOMES</h4>
@@ -457,42 +481,44 @@
   <section id="contact" class="get-started">
     <div class="container">
       <div class="row text-center">
-        <h1 class="display-3 fw-bold text-capitalize">Contact Me</h1>
+        <h2 class="display-3 fw-bold text-capitalize">Contact Me</h2>
         <div class="heading-line"></div>
       </div>
       <br>
       <!-- START THE CTA CONTENT  -->
-      <form onsubmit="emailsend(); reset(); return false;" class="row">
+      <form onsubmit="emailsend(this); return false;" class="row">
         <div class="row text-white">
           <div class="col-12 col-lg-6 gradient shadow p-3">
             <div class="cta-info w-100">
-              <h4 class="display-4 fw-bold mb-3">Mail me</h4>
+              <h3 class="display-4 fw-bold mb-3">Mail me</h3>
               <div class="col-lg-12 col-md mb-3">
                 <input type="text" name="firstName" placeholder="First Name" id="inputFirstName"
-                  class="shadow form-control form-control-lg" required>
+                  aria-label="First name" autocomplete="given-name" class="shadow form-control form-control-lg" required>
               </div>
               <div class="col-lg-12 col-md mb-3">
                 <input type="text" name="lastName" placeholder="Last Name" id="inputLastName"
-                  class="shadow form-control form-control-lg" required>
+                  aria-label="Last name" autocomplete="family-name" class="shadow form-control form-control-lg" required>
               </div>
               <div class="col-lg-12 mb-3">
                 <input type="email" name="email" placeholder="Email Address" id="inputEmail"
-                  class="shadow form-control form-control-lg" required>
+                  aria-label="Email address" autocomplete="email" class="shadow form-control form-control-lg" required>
               </div>
             </div>
           </div>
           <div class="col-12 col-lg-6 bg-white shadow p-3">
             <div class="form w-100 pb-2">
               <div class="col-lg-12 mb-3">
-                <textarea name="message" placeholder="Message" id="message" rows="8"
+                <textarea name="message" placeholder="Message" id="message" rows="8" aria-label="Message"
                   class="shadow form-control form-control-lg" required></textarea>
               </div>
+              <input type="text" name="_honey" class="visually-hidden" tabindex="-1" autocomplete="off"
+                aria-hidden="true">
               <div class="text-center d-grid mt-1">
-                <br>
                 <button type="submit" class="btn btn-primary rounded-pill pt-3 pb-3">
                   Submit
                   <i class="fas fa-paper-plane"></i>
                 </button>
+                <p id="formStatus" class="form-status mt-3 mb-0" role="status" aria-live="polite"></p>
               </div>
             </div>
           </div>
@@ -520,7 +546,7 @@
             </svg>
           </div>
           <div class="contact-box__info">
-            <a id="myInput" onclick="myFunction()" class="contact-box__info--title">+91 8870823254</a>
+            <a href="tel:+918870823254" class="contact-box__info--title">+91 8870823254</a>
             <p class="contact-box__info--subtitle"> Mobile Number</p>
           </div>
         </div>
@@ -556,7 +582,7 @@
           </div>
           <div class="contact-box__info">
             <a href="https://www.google.com/maps/place//@10.7878945,77.2775098,13.93z?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D"
-              class="contact-box__info--title">Tiruppur, Tamil Nadu</a>
+              target="_blank" rel="noopener" class="contact-box__info--title">Tiruppur, Tamil Nadu</a>
             <p class="contact-box__info--subtitle">641671</p>
           </div>
         </div>
@@ -571,9 +597,11 @@
             connect with me on social media
           </div>
           <div class="col-lg-7 col-md-6">
-            <a href="https://github.com/viyaas"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/viyaas-k-g-e-27b790252"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/_viyaas_/"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/viyaas" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/viyaas-k-g-e-27b790252" target="_blank" rel="noopener"
+              aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/_viyaas_/" target="_blank" rel="noopener"
+              aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
       </div>
@@ -587,7 +615,7 @@
         <div class="row text-center text-white">
           <div class="col-12">
             <div class="footer-bottom__copyright">
-              copyright &copy; By Viyaas | All rights reserved.</a>
+              copyright &copy; <span id="year">2025</span> By Viyaas | All rights reserved.
             </div>
           </div>
         </div>
@@ -596,25 +624,11 @@
   </footer>
 
   <!-- BACK TO TOP BUTTON  -->
-  <a href="#" class="shadow btn-primary rounded-circle back-to-top">
+  <a href="#home" class="shadow btn-primary rounded-circle back-to-top" aria-label="Back to top">
     <i class="fas fa-chevron-up"></i>
   </a>
-  <script src="assets/vendors/js/glightbox.min.js"></script>
-
-  <script type="text/javascript">
-    const lightbox = GLightbox({
-      'touchNavigation': true,
-      'href': 'https://www.youtube.com/watch?v=J9lS14nM1xg',
-      'type': 'video',
-      'source': 'youtube', //vimeo, youtube or local
-      'width': 900,
-      'autoPlayVideos': 'true',
-    });
-
-  </script>
-  <script src="https://smtpjs.com/v3/smtp.js">
-  </script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="custom-timeline.js"></script>
 </body>
 
 </html>
