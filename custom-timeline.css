@@ -133,22 +133,22 @@
     color: #797979;
 }
 
-/* Scroll reveal (toggled by custom-timeline.js) */
-.reveal {
+/* Scroll reveal (toggled by custom-timeline.js); content stays visible without JS */
+.js .reveal {
     opacity: 0;
     transition: opacity .7s ease, transform .7s ease;
 }
 
-.reveal-left { transform: translateX(-40px); }
-.reveal-right { transform: translateX(40px); }
+.js .reveal-left { transform: translateX(-40px); }
+.js .reveal-right { transform: translateX(40px); }
 
-.reveal.in-view {
+.js .reveal.in-view {
     opacity: 1;
     transform: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .reveal {
+    .js .reveal {
         opacity: 1;
         transform: none;
         transition: none;
@@ -372,6 +372,8 @@ img { max-width: 100%; height: auto; }
 
 .btn-rounded { color: #212529; text-decoration: none; }
 .btn-rounded:hover { color: #fff; }
+.btn-rounded span { display: flex; align-items: center; justify-content: center; }
+.btn-rounded span i { line-height: 1; }
 .nav-call { display: inline-block; }
 
 .experience .timeline-text ul { margin: 0; padding-left: 1.1rem; font-size: 0.9rem; color: #797979; }
@@ -394,7 +396,7 @@ img { max-width: 100%; height: auto; }
 
 /* Tablets and below */
 @media (max-width: 991.98px) {
-    .reveal-left, .reveal-right { transform: translateY(24px); }
+    .js .reveal-left, .js .reveal-right { transform: translateY(24px); }
     .site-logo img { margin-left: 0; }
     .menu .navbar-nav { padding: 0.5rem 0; }
     .menu .navbar-nav li { padding: 0; }
